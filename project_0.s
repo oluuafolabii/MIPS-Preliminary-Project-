@@ -8,3 +8,6 @@ main:
     li $t0, 7       # N = 7
     li $t3, 9       # Constant 9
     # Initialization complete
+    li $t1, 0
+forward_loop:
+    beq $t1, $t3, backward_loop
