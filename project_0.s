@@ -32,3 +32,6 @@ forward_newline:
     li $a0, 10
     li $v0, 11
     syscall
+    addi $t1, $t1, 1
+    j forward_loop
+    # Forward printing complete
