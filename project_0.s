@@ -39,3 +39,6 @@ backward_loop:
     li $t1, 0
 backward_loop_start:
     beq $t1, $t3, end_program
+    add $t6, $t1, $t5
+    div $t6, $t3
+    mfhi $t7
