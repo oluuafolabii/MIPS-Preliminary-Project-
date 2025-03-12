@@ -45,3 +45,7 @@ backward_loop_start:
     li $t9, 8
     sub $t7, $t9, $t7
     la $t8, id
+    add $t8, $t8, $t7
+    lb $a0, 0($t8)
+    li $v0, 11
+    syscall
