@@ -35,3 +35,7 @@ forward_newline:
     addi $t1, $t1, 1
     j forward_loop
     # Forward printing complete
+backward_loop:
+    li $t1, 0
+backward_loop_start:
+    beq $t1, $t3, end_program
