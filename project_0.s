@@ -26,3 +26,9 @@ forward_char_loop:
     lb $a0, 0($t8)
     li $v0, 11
     syscall
+    addi $t5, $t5, 1
+    j forward_char_loop
+forward_newline:
+    li $a0, 10
+    li $v0, 11
+    syscall
