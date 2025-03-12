@@ -55,3 +55,8 @@ backward_newline:
     li $a0, 10
     li $v0, 11
     syscall
+    addi $t1, $t1, 1
+    j backward_loop_start
+end_program:
+    li $v0, 10
+    syscall
