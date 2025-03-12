@@ -49,3 +49,9 @@ backward_loop_start:
     lb $a0, 0($t8)
     li $v0, 11
     syscall
+    addi $t5, $t5, 1
+    j backward_char_loop
+backward_newline:
+    li $a0, 10
+    li $v0, 11
+    syscall
