@@ -11,3 +11,7 @@ main:
     li $t1, 0
 forward_loop:
     beq $t1, $t3, backward_loop
+    add $t2, $t1, $t0
+    addi $t2, $t2, 1
+    div $t2, $t3
+    mfhi $t4
