@@ -15,3 +15,6 @@ forward_loop:
     addi $t2, $t2, 1
     div $t2, $t3
     mfhi $t4
+    li $t5, 0
+forward_char_loop:
+    beq $t5, $t3, forward_newline
