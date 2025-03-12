@@ -42,3 +42,6 @@ backward_loop_start:
     add $t6, $t1, $t5
     div $t6, $t3
     mfhi $t7
+    li $t9, 8
+    sub $t7, $t9, $t7
+    la $t8, id
