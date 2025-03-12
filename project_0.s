@@ -18,3 +18,6 @@ forward_loop:
     li $t5, 0
 forward_char_loop:
     beq $t5, $t3, forward_newline
+    add $t6, $t4, $t5
+    div $t6, $t3
+    mfhi $t7
