@@ -21,3 +21,8 @@ forward_char_loop:
     add $t6, $t4, $t5
     div $t6, $t3
     mfhi $t7
+    la $t8, id
+    add $t8, $t8, $t7
+    lb $a0, 0($t8)
+    li $v0, 11
+    syscall
