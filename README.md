@@ -14,4 +14,6 @@ The string is literal program data; it is not read from a user or generated at r
 
 Open `project_0.s` in a MIPS simulator that supports the assembly syntax and syscalls used here, assemble it, and run `main`. Inspect the console for the 18 printed lines. The source includes `li`, `div`/`mfhi`, `lb`, branches, and syscalls 10 and 11.
 
-This README describes the checked-in source; execution in a simulator has **not** been verified for this documentation update. The repository has no test harness or build configuration. `README.txt` is an older link-only file retained as-is.
+## Limitations
+
+The owner reports having run the assembly code during the course. No simulator, input/output capture, or automated test harness was available to independently verify this particular program for the documentation update. The program uses a fixed nine-character literal, so it does not accept arbitrary input; simulator-specific syscall and pseudo-instruction behavior should be checked before reuse. `README.txt` is an older link-only file retained as-is.
